@@ -20,7 +20,7 @@ function App() {
             <Route index element={<Navigate to="/genre-list" />} />
             <Route path="/genre-list" element={<GenreListPage />} />
             <Route path="/movie-list" element={<MovieListPage />} />
-            <Route path="/movie-details" element={<MovieDetailsPage />} />
+            <Route path="/movie-details/:movie_id" element={<MovieDetailsPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </div>

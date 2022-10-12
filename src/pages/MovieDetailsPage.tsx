@@ -1,5 +1,11 @@
+import { MovieDetails } from "../feature/get-movie-details/components/MovieDetails";
+
 const MovieDetailsPage = () => {
-  return <div>test</div>;
+  return (
+    <>
+      <MovieDetails />
+    </>
+  );
 };
 
 export default MovieDetailsPage;
