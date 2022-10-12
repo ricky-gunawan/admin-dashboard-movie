@@ -1,5 +1,4 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
 import { getMovieListApi } from "../../../shared/api";
 
 export interface MovieList {
@@ -28,7 +27,7 @@ export interface MovieList {
   total_results?: number;
 }
 
-const getMovieListQuery = createAsyncThunk<MovieList, { page: string }>("getMovieList/getMovieListQuery", async (payload, thunkAPI) => {
+const getMovieListQuery = createAsyncThunk<MovieList, { page: number }>("getMovieList/getMovieListQuery", async (payload, thunkAPI) => {
   const resp = await getMovieListApi(payload.page);
   return resp.data;
 });

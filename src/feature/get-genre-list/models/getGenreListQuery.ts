@@ -1,5 +1,4 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
 import { getGenreListApi } from "../../../shared/api";
 
 export interface GenreList {
